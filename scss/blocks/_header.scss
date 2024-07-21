@@ -1,0 +1,36 @@
+.site-header {
+    padding: 20px 0;
+    background-color: #0000004D;
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(50px);
+}
+.header {
+    @include display($items:center, $space:space-between, $gap:none);
+}
+.header-wrapper {
+    @include display($items:center, $space:space-between, $gap:101px);
+}
+.header-logo {
+    display: inline-block;
+}
+.header-list {
+    @include display($items:center, $space:none, $gap:32px);
+}
+.header-item {
+}
+.header-link {
+    @include textStyle($MB:none, $FS:20px, $FW:300, $CLR:$white-color, $LH:23.87px, $CASE:uppercase);
+
+    transition: all 0.3s linear;
+    &:hover{
+        color: $orange-color;
+    }
+}
+.header-phone-link {
+}
+.header-phone {
+    @include textStyle($MB:none, $FS:18px, $FW:400, $CLR:$white-color, $LH:21.48px, $CASE:uppercase);
+    transition: all 0.3s linear;
+}
